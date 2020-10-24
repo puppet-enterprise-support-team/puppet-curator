@@ -1,0 +1,22 @@
+name: Run unit tests
+
+on:
+  - push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Run static validation and save report to junit xml
+        uses: puppet-enterprise-support-team/action-pdk-validate@v1
+
+      - name: Run unit tests and save report to junit xml
+        uses: puppet-enterprise-support-team/action-pdk-test-unit@v1
+
+      - name: Publish Test Report
+        uses: mikepenz/action-junit-report@v1
+        with:
+          report_paths: './junit-tests/*.xml'
+          github_token: ${{ secrets.GITHUB_TOKEN }}
