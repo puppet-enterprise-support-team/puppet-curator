@@ -1,4 +1,4 @@
-name: Run unit tests
+name: Run tests
 
 on:
   - push
@@ -15,8 +15,9 @@ jobs:
       - name: Run unit tests and save report to junit xml
         uses: puppet-enterprise-support-team/action-pdk-test-unit@v1
 
-      - name: Publish Test Report
+      - name: Publish static validation and unit test report
         uses: mikepenz/action-junit-report@v1
+        if: ${{ always() }}
         with:
-          report_paths: './junit-tests/*.xml'
+          report_paths: './junit-tests/TEST-*.xml'
           github_token: ${{ secrets.GITHUB_TOKEN }}
