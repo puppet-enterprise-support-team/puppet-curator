@@ -26,7 +26,12 @@ describe 'curator', :type => :class do
     let(:facts) do
       {
         :lsbdistid => 'Debian',
-        :osfamily  => 'Debian'
+        :osfamily  => 'Debian',
+        :os => {
+          :release => {
+            :major => '8'
+          }
+        }
       }
     end
 
@@ -49,6 +54,11 @@ describe 'curator', :type => :class do
       {
         :lsbdistid => 'Debian',
         :osfamily  => 'Debian',
+        :os => {
+          :release => {
+            :major => '8'
+          }
+        }
       }
     end
     it { should contain_package('python-elasticsearch-curator').with(:ensure => '4.1.0') }

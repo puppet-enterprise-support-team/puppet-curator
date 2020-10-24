@@ -1,22 +1,68 @@
 {
-  "name": "cristifalcas-curator",
-  "version": "3.5.0",
+  "name": "pest-curator",
+  "version": "3.5.1",
   "author": "Cristian Falcas <cristifalcas@gmail.com>",
-  "license": "Apache-2.0",
   "summary": "Installs elasticsearch curator",
-  "source": "https://github.com/cristifalcas/puppet-curator",
-  "project_page": "https://github.com/cristifalcas/puppet-curator",
-  "issues_url": "https://github.com/cristifalcas/puppet-curator/issues",
-  "tags": ["curator", "elasticsearch"],
-  "operatingsystem_support": [
-    { "operatingsystem": "RedHat", "operatingsystemrelease": [ "6", "7" ] },
-    { "operatingsystem": "CentOS", "operatingsystemrelease": [ "6", "7" ] },
-    { "operatingsystem": "Ubuntu", "operatingsystemrelease": [ "12.04", "14.04" ] },
-    { "operatingsystem": "Debian", "operatingsystemrelease": [ "8" ] }
-  ],
+  "license": "Apache-2.0",
+  "source": "https://github.com/puppet-enterprise-support-team/puppet-curator",
+  "project_page": "https://github.com/puppet-enterprise-support-team/puppet-curator",
+  "issues_url": "https://github.com/puppet-enterprise-support-team/puppet-curator/issues",
   "dependencies": [
-    { "name": "puppetlabs/apt", "version_requirement": ">=2.2.0" },
-    { "name": "puppetlabs/stdlib", "version_requirement": ">=4.2.0 <5.0.0" },
-    { "name": "puppetlabs/concat", "version_requirement": ">=4.0.0 <5.0.0" }
-  ]
+    {
+      "name": "puppetlabs/apt",
+      "version_requirement": ">=2.2.0 <8.0.0"
+    },
+    {
+      "name": "puppetlabs/stdlib",
+      "version_requirement": ">=4.13.0 <5.0.0"
+    },
+    {
+      "name": "puppetlabs/concat",
+      "version_requirement": ">=4.0.0 <5.0.0"
+    }
+  ],
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "RedHat",
+      "operatingsystemrelease": [
+        "6",
+        "7"
+      ]
+    },
+    {
+      "operatingsystem": "CentOS",
+      "operatingsystemrelease": [
+        "6",
+        "7"
+      ]
+    },
+    {
+      "operatingsystem": "Ubuntu",
+      "operatingsystemrelease": [
+        "12.04",
+        "14.04"
+      ]
+    },
+    {
+      "operatingsystem": "Debian",
+      "operatingsystemrelease": [
+        "8",
+        "9",
+        "10"
+      ]
+    }
+  ],
+  "requirements": [
+    {
+      "name": "puppet",
+      "version_requirement": ">= 4.10.0 < 7.0.0"
+    }
+  ],
+  "tags": [
+    "curator",
+    "elasticsearch"
+  ],
+  "pdk-version": "1.18.1",
+  "template-url": "pdk-default#1.18.1",
+  "template-ref": "tags/1.18.1-0-g3d2e75c"
 }
