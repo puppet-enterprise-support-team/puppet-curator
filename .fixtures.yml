@@ -5,7 +5,10 @@ fixtures:
       ref: "2.2.0"
     stdlib:
       repo: "puppetlabs/stdlib"
-      ref: "4.2.0"
+      ref: "4.13.0"
+    yumrepo_core:
+      repo: "puppetlabs/yumrepo_core"
+      ref: "1.0.0"
     concat:
       repo: "puppetlabs/concat"
   symlinks:

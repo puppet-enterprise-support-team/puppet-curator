@@ -180,7 +180,7 @@ class curator (
   if !$install_only {
     contain '::curator::config'
 
-    Class['curator::install'] ->
-    Class['curator::config']
+    Class['curator::install']
+    -> Class['curator::config']
   }
 }

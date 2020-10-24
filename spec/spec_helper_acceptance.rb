@@ -27,7 +27,7 @@ RSpec.configure do |c|
       on host, puppet('module', 'install', 'stankevich/python'), { :acceptable_exit_codes => [0,1] }
 
       if fact('osfamily') == 'RedHat'
-        on host, puppet('module','install','stahnma/epel'), { :acceptable_exit_codes => [0,1] }
+        on host, puppet('module', 'install', 'stahnma/epel'), { :acceptable_exit_codes => [0,1] }
       end
     end
   end
