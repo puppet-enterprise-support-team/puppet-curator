@@ -1,3 +1,7 @@
+# == Class: curator::install
+#
+# Handles the package installation
+#
 class curator::install {
   if ($curator::manage_repo == true) {
     # Set up repositories

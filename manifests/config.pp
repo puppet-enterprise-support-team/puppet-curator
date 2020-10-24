@@ -1,3 +1,7 @@
+# == Class: curator::config
+#
+# Representation of curator configuration
+#
 class curator::config {
 
   $path = dirname($curator::config_file)

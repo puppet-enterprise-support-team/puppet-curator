@@ -1,5 +1,4 @@
-[![Puppet Forge](http://img.shields.io/puppetforge/v/jlambert121/curator.svg)](https://forge.puppetlabs.com/jlambert121/curator)
-[![Build Status](https://travis-ci.org/jlambert121/jlambert121-curator.png?branch=master)](https://travis-ci.org/jlambert121/jlambert121-curator)
+[![Puppet Forge](http://img.shields.io/puppetforge/v/pest/curator.svg)](https://forge.puppetlabs.com/pest/curator)
 
 #### Table of Contents
 
@@ -17,7 +16,7 @@
 ## Overview
 
 A puppet module for installing and configuring [elastic-curator](https://github.com/elastic/curator).
-This module was forked from jlambert121-curator and updated for curator4
+This module was forked from cristifalcas-curator and updated for curator4
 
 ## Module Description
 
@@ -55,7 +54,7 @@ Also, now it is your job to create the cron job:
 Installation of the curator module:
 
 ```
-  puppet module install cristifalcas-curator
+  puppet module install pest-curator
 ```
 
 ## Usage
@@ -246,5 +245,5 @@ Default: ['elasticsearch', 'urllib3']
 
 ## Development
 
-Improvements and bug fixes are greatly appreciated.  See the [contributing guide](https://github.com/jlambert121/jlambert121-curator/CONTRIBUTING.md) for
+Improvements and bug fixes are greatly appreciated.  See the [contributing guide](https://github.com/puppet-enterprise-support-team/puppet-curator/CONTRIBUTING.md) for
 information on adding and validating tests for PRs.
