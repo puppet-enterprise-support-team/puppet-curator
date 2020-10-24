@@ -5,6 +5,8 @@ All notable changes to this project will be documented in this file.
 ## Release 3.5.1
 
 **Features**
+- Add automated static validations by github actions
+- Add automated unit testing by github actions
 - Converted to PDK (Puppet Development Kit)
 
 **Bugfixes**
