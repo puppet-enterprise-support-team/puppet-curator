@@ -9,14 +9,13 @@
     * [Beginning with curator](#beginning-with-curator)
 4. [Usage - Configuration options and additional functionality](#usage)
 5. [Reference - An under-the-hood peek at what the module is doing and how](#reference)
-6. [Limitations - OS compatibility, etc.](#limitations)
-7. [Development - Guide for contributing to the module](#development)
 
 
 ## Overview
 
 A puppet module for installing and configuring [elastic-curator](https://github.com/elastic/curator).
-This module was forked from cristifalcas-curator and updated for curator4
+This module was forked from [ccin2p3-puppet-curator](https://github.com/ccin2p3/puppet-curator) which is a fork of 
+cristifalcas-curator and was updated for curator4.
 
 ## Module Description
 
@@ -237,13 +236,3 @@ Default: default
 #####`blacklist`
 String.  This should be an empty array [], an array of log handler strings, or left empty.
 Default: ['elasticsearch', 'urllib3']
-
-
-### Private classes
-
-## Limitations
-
-## Development
-
-Improvements and bug fixes are greatly appreciated.  See the [contributing guide](https://github.com/puppet-enterprise-support-team/puppet-curator/CONTRIBUTING.md) for
-information on adding and validating tests for PRs.

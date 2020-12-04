@@ -1,12 +1,12 @@
 {
   "name": "pest-curator",
-  "version": "3.5.1",
-  "author": "Cristian Falcas <cristifalcas@gmail.com>",
+  "version": "3.5.2",
+  "author": "Puppets Epic Show Theatre",
   "summary": "Installs elasticsearch curator",
   "license": "Apache-2.0",
-  "source": "https://github.com/puppet-enterprise-support-team/puppet-curator",
-  "project_page": "https://github.com/puppet-enterprise-support-team/puppet-curator",
-  "issues_url": "https://github.com/puppet-enterprise-support-team/puppet-curator/issues",
+  "source": "https://github.com/puppets-epic-show-theatre/puppet-curator",
+  "project_page": "https://github.com/puppets-epic-show-theatre/puppet-curator",
+  "issues_url": "https://github.com/puppets-epic-show-theatre/puppet-curator/issues",
   "dependencies": [
     {
       "name": "puppetlabs/apt",
@@ -25,28 +25,24 @@
     {
       "operatingsystem": "RedHat",
       "operatingsystemrelease": [
-        "6",
         "7"
       ]
     },
     {
       "operatingsystem": "CentOS",
       "operatingsystemrelease": [
-        "6",
         "7"
       ]
     },
     {
       "operatingsystem": "Ubuntu",
       "operatingsystemrelease": [
-        "12.04",
         "14.04"
       ]
     },
     {
       "operatingsystem": "Debian",
       "operatingsystemrelease": [
-        "8",
         "9",
         "10"
       ]
