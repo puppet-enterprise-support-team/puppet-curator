@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
+## Release 3.5.2
+
+### Summary
+
+- Extended test suite to puppet 5 and puppet 6
+- Updated README.md and metadata.json
+- Added .sync.yml for `pdk update`
+
 ## Release 3.5.1
 
 **Features**
